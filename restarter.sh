@@ -15,6 +15,9 @@ RED='\033[0;31m'   # Red color for errors
 GREEN='\033[0;32m' # Green color for success messages
 NC='\033[0m'       # No Color
 
+#Dummy describe to force shell authorization without skipping the first vm in file
+gcloud compute instances describe dummy --zone=dummy --format='get(selfLink)'
+
 # Loop through each VM name in the input file
 while read -r VM_NAME; do
   if [ -n "$VM_NAME" ]; then
