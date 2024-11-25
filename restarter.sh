@@ -15,6 +15,8 @@ RED='\033[0;31m'   # Red color for errors
 GREEN='\033[0;32m' # Green color for success messages
 NC='\033[0m'       # No Color
 
+echo "Getting dummy vm description to force cli auth without skipping the first vm in file"
+echo "The following error should be ignored!"
 #Dummy describe to force the shell to authorise without skipping the first vm in file. It will throw an error because the zone does not exist but no worries
 gcloud compute instances describe dummy --zone=dummy --format='get(selfLink)'
 
