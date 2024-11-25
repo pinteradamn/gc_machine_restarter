@@ -15,7 +15,7 @@ RED='\033[0;31m'   # Red color for errors
 GREEN='\033[0;32m' # Green color for success messages
 NC='\033[0m'       # No Color
 
-#Dummy describe to force shell authorization without skipping the first vm in file
+#Dummy describe to force the shell to authorise without skipping the first vm in file. It will throw an error because the zone does not exist but no worries
 gcloud compute instances describe dummy --zone=dummy --format='get(selfLink)'
 
 # Loop through each VM name in the input file
