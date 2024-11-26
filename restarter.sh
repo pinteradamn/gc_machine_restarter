@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Hardcoded zone
-ZONE="us-central1-c"
+ZONE="europe-west3-a"
 
 # Input file containing VM names
 INPUT_FILE="list"
